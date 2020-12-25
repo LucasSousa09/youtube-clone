@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="youtube-container">
+        <div class="top-bar">
+            <div class="youtube-logo">
+                <button id="nav-button"><i class="fas fa-bars"></i><span class="circle"></span></button>
+                <a href="#"><i class="fab fa-youtube"><div class="white-dot"></div></i>YouTube <span>BR</span></a>
+            </div>
+
+            <div id="search-bar" class="search-bar">
+                <input type="text" placeholder="Pesquisar">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="other-settings">
+                <button><i class="fas fa-video"></i></button>
+                <button><i class="fas fa-th"></i></button>
+                <button><i class="fas fa-bell"></i></button>
+                <div class="user-picture"></div>
+            </div>
+        </div>
+        <div class="nav-bar">       
+            <ul class="main-ul">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <p>Início</p> 
+                     </a>
+                </li>
+                <li> 
+                    <a href="#">
+                        <i class="fas fa-fire"></i>
+                        <p>Em alta</p>
+                     </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bookmark"></i>
+                        <p>Inscrições</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="history-ul">
+                <li>  <a href="#"><i class="fas fa-book"></i><p>Biblioteca</p></a></li>
+                <div class="to-active-class">
+                    <li> 
+                        <a href="#">
+                            <i class="fas fa-history"></i>
+                            <p>Histórico</p>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <i class="fas fa-play"></i>
+                            <p>Seus Vídeos</p>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <i class="fas fa-clock"></i>
+                            <p>Assistir mais tarde</p>
+                        </a>
+                    </li>
+                    <li>  
+                        <a href="#">
+                            <i class="fas fa-thumbs-up"></i>
+                            <p> Vídeos markados como "Gostei"</p>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+
+            <ul class="subscriptions-ul">
+                <li> <div class="sub-circle"></div> <a href="#">Subscription 1</a></li>
+                <li> <div class="sub-circle"></div> <a href="#">Subscription 2</a></li>
+                <li> <div class="sub-circle"></div> <a href="#">Subscription 3</a></li>
+                <li> <div class="sub-circle"></div> <a href="#">Subscription 4</a></li>
+                <li> <div class="sub-circle"></div> <a href="#">Subscription 6</a></li>
+                <li> <div class="sub-circle"></div> <a href="#">Subscription 7</a></li>
+                <button class="show-more"> <i class="fas fa-angle-down"></i> Mostrar mais 9</button>
+            </ul>
+
+            <ul class="others-ul">
+                <li> 
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                        <p>YouTube Premium</p>
+                    </a>
+                </li>
+                <li>  
+                    <a href="#">
+                        <i class="fas fa-film"></i>
+                        <p>Filmes</p>
+                    </a>
+                </li>
+                <li>  
+                    <a href="#">
+                        <i class="fas fa-gamepad"></i
+                            ><p>Jogos</p>
+                        </a>
+                    </li>
+                <li>  
+                    <a href="#">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <p>Ao vivo</p>
+                    </a>
+                </li>
+                <li>  
+                    <a href="#">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Aprender</p>
+                        
+                    </a>
+                </li>
+            </ul>
+            <ul class="settings-ul">
+                <li>  <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <p>Configurações</p>
+                </a>
+            </li>
+                <li>  <a href="#">
+                    <i class="fas fa-flag"></i>
+                    <p>Histórico de Denúncias</p>
+                </a>
+            </li>
+                <li>  <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <p>Ajuda</p>
+                </a>
+            </li>
+                <li>  <a href="#">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Enviar Feedback</p>
+                </a>
+            </li>
+            </ul>
+        </div>
+        <div class="videos">
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 1</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 2</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 3</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 4</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 5</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 6</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 7</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 8</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 9</h3> 
+                    <span class ="channel">Canal</span> 
+                    <span class="views"> Visualizações </span>  
+                    <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 10</h3>
+                     <span class ="channel">Canal</span>
+                      <span class="views"> Visualizações </span> 
+                      <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 11</h3>
+                     <span class ="channel">Canal</span>
+                      <span class="views"> Visualizações </span> 
+                      <span class="time"> há 10 horas</span> 
+            </div>
+            <div class="video">
+                <div class="channel-picture"></div> 
+                    <h3>Vídeo 12</h3>
+                     <span class ="channel">Canal</span>
+                      <span class="views"> Visualizações </span> 
+                      <span class="time"> há 10 horas</span> 
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
